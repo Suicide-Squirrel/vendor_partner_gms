@@ -3,15 +3,14 @@ Android 10 ARM64 GAPPS
 
 To build your GAPPS in your rom simply include:
 
-vendor/gapps/common/common-vendor.mk
+vendor/partner_gms/products/gms.mk
 
 into your device makefile.
 
 e.g:
 
-$(call inherit-product-if-exists, vendor/gapps/common/common-vendor.mk)
+$(call inherit-product-if-exists, vendor/partner_gms/products/gms.mk)
 
 or
 
--include vendor/gapps/common/common-vendor.mk
-
+-include vendor/partner_gms/products/gms.mk
